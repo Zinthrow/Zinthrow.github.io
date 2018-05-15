@@ -15,6 +15,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("http://aleadrkandic.ba/wp-content/uploads/2017/03/2-DNA-computer-1.jpg");
+  min-height: 100%;
 </style>
 <body class="w3-white">
 
@@ -52,9 +57,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Page Content -->
 <!-- Header/Home -->
-<div img src="http://aleadrkandic.ba/wp-content/uploads/2017/03/2-DNA-computer-1.jpg" class="w3-image" style="width:100%">
-  <span class="w3-jumbo w3-hide-small">Alex Larsen</span><br>
-  <p>Bioinformatician and Neurobiologist.</p>
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Alex Larsen</span><br>
+    <p>Bioinformatician and Neurobiologist.</p>
 <div class="w3-padding-large" id="main">
   </header>
   <!-- About Section -->
