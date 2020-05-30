@@ -20,8 +20,11 @@ body, html {
     background-position: center;
     background-size: cover;
     background-image: url("dna_information.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100%;
 }
+.alex-white {color: white;}
 .w3-bar .w3-button {
     padding: 16px;
 }
@@ -35,6 +38,7 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#skills" class="w3-bar-item w3-button"><i class="fas fa-dumbbell"></i>SKILLS</a>
       <a href="#linkedin" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i> LINKEDIN</a>
       <a href="#compendium" class="w3-bar-item w3-button"><i class="fa fa-flask"></i> COMPENDIUM</a>
       <a href="#photography" class="w3-bar-item w3-button"><i class="fa fa-camera"></i> PHOTOGRAPHY</a>
@@ -81,7 +85,7 @@ body, html {
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<div class="skills-padding" id="about">
   <h3 class="w3-center">About</h3>
   <p class="w3-center w3-large">Summary</p>
   <p class="w3-center">
@@ -95,6 +99,92 @@ body, html {
     coordinating projects and public speaking. A selfdirected learner, highly collaborative, and
     excellent at working autonomously.
   </p>
+</div>
+
+<!-- Skills Section -->
+<div id="skills" class="w3-container bgimg-1 skills-padding">
+  <div class="w3-row-padding w3-white w3-opacity-min">
+    <!--div class="w3-col m1"><h3></h3></div>-->
+    <div class="w3-third m6"><h3>My Skills</h3></div>
+    <div class="w3-third m6"><h3></h3></div>
+    <div class="w3-container m6"><h3></h3></div>
+    <!--<div class="w3-col m1"><p></p></div>-->
+    <div class="w3-third m6 ">
+      <ul style="font-size:120%"> 
+          <li> Software</li>
+          <ul>
+              <li>Python</li>
+              <li>SQL </li>
+              <li>MongoDB / NoSQL</li>
+              <li>C++</li>
+              <li>R Programming </li>
+              <li>Bash scripting </li>
+              <li>git versioning</li>
+              <li>Html/CSS </li> 
+              <li>REST API</li>
+              <li>Javascript</li>
+              <li>Docker</li>   
+              </ul>        
+          </li>
+    </div>
+    <div class="w3-third m6">
+      
+      <ul style="font-size:120%"> 
+          <li> Bioinformatics</li>
+          <ul>
+              <li>Metagenomics</li>
+              <li>Sequence alignment </li>
+              <li>Multiple Sequence alignment </li>
+              <li>Metatranscriptomics</li>
+              <li>Transcriptomics</li>
+              <li>Illumina Instrument Handling</li>
+              <li>Whole Exome Sequencing</li>
+              <li>Statistical modelling</li>
+              <li>Phylogeny</li>
+              </ul>        
+          </li>
+    </div>
+    <div class="w3-third m6">
+      
+      <ul style="font-size:120%"> 
+          <li> Interpersonal</li>
+          <ul>
+              <li> Public Speaking </li>
+              <li> Mentoring </li>
+              <li> Project coordination</li>
+              <li> Involved Teamwork </li>
+              <li> Inter-divisional coordination</li>     
+          </ul>
+          <li> Intrapersonal
+            <ul>
+                <li> Self-directed</li>
+                <li> SOP writing  </li>
+                <li> Project design </li>
+                <li> Goal Setting</li>
+            </ul>
+    </div>
+    <!--
+    <div class="w3-quarter m6">
+      <h3 style="font-size:120%">  </h3>
+      <ul style="font-size:120%">
+        <li> Hobbies and Interests
+          <ul>
+            <li> Hiking/camping </li>
+            <li> Rock Climbing </li>
+            <li> Traveling </li>
+            <li> Reading </li>
+            <li> Alpine skiing</li>
+            <li> Water skiing </li>
+            <li> Biking </li>
+            <li> Bike mechanics </li>
+            <li> Karate </li>
+            <li>Fencing</li>
+          </ul>
+        -->
+        </li>
+      </ul> 
+    </div>
+  </div>
 </div>
 
 <!-- Linkedin -->
@@ -129,7 +219,7 @@ body, html {
 <!-- COMPENDIUM Section -->
 <div class="w3-container w3-dark-grey" style="padding:128px 16px" id="compendium">
   <h3 class="w3-center">COMPENDIUM</h3>
-  <p class="w3-center w3-large"> Helpful guide of bioinformatic tools. Contains software and some algorithms for sequence alignment, assembly, clustering, bayesian networks, biological networks and more.  </p>
+  <p class="w3-center w3-large"> Helpful guide of bioinformatic tools. Contains software and some algorithms for sequence alignment, assembly, clustering, bayesian networks, biological networks and more from my classwork.  </p>
   <p style="text-align:center;"><a href="Bioinformatics%20compendium.pdf" class="w3-button w3-black w3-xlarge"><i class="fa fa-file"> </i> View PDF </a></p>
 </div>
 
@@ -214,59 +304,7 @@ body, html {
   </div>
 </div>
 
-<!-- Skills Section -->
-<div class="w3-container w3-blue w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-quarter m6"><h3></h3></div>
-    <div class="w3-quarter m6"><h3>My Skills</h3></div>
-    <div class="w3-quarter m6"><h3></h3></div>
-    <div class="w3-container m6"><h3></h3></div>
-    <div class="w3-quarter m6"><p></p></div>
-    <div class="w3-quarter m6">
-      
-      <ul style="font-size:120%"> 
-          <li> Software 
-          <ul>
-              <li>Python - Proficiency</li>
-              <li>SQL </li>
-              <li>C++</li>
-              <li>R Programming </li>
-              <li>Bash scripting </li>
-              <li>git versioning</li>
-              <li>Html/CSS </li>    
-              </ul>        
-          </li>
-          <li> Interpersonal
-          <ul>
-              <li> Mentoring </li>
-              <li> Presenting </li>
-              <li> Project coordination </li>
-              <li> Involved Teamwork </li>
-                  
-        </ul>
-      
-    </div>
-    <div class="w3-quarter m6">
-      <h3 style="font-size:120%">  </h3>
-      <ul style="font-size:120%">
-        <li> Hobbies and Interests
-          <ul>
-            <li> Hiking/camping </li>
-            <li> Rock Climbing </li>
-            <li> Traveling </li>
-            <li> Tutoring </li>
-            <li> Reading </li>
-            <li> Alpine skiing</li>
-            <li> Water skiing </li>
-            <li> Biking </li>
-            <li> Bike mechanics </li>
-            <li> Karate and Fencing </li>
-          </ul>
-        </li>
-      </ul> 
-    </div>
-  </div>
-</div>
+
 
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
