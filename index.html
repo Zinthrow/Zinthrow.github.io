@@ -1,346 +1,555 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>Alex Larsen</title>
+<html lang="en">
+<head>
+  <title>Alexander Larsen</title>
   <link rel="icon" href="dna.png">
+  <meta property="og:title" content="Alexander Larsen — Computational Biologist">
+  <meta property="og:description" content="Computational Biology PhD candidate at TUM/Helmholtz Munich & Roche. Deep learning for RNA therapeutics, bioinformatics, and software engineering.">
+  <meta property="og:image" content="dna_information.jpg">
+  <meta property="og:url" content="https://Zinthrow.github.io">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<meta property="og:title" content="About Alexander Larsen">
-<meta property="og:description" content="A quick overview of skills and interests.">
-<meta property="og:image" content="dna_information.jpg">
-<meta property="og:url" content="http://Zinthrow.github.io">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-}
-/* Full height image header */
-.bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("dna_information.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100%;
-}
-.bgimg-2 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("dna_information.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.alex-white {color: white;}
-.w3-bar .w3-button {
-    padding: 16px;
-}
-</style>
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">A.W.L.</a>
-    <!-- Right-sided navbar links -->
+    <a href="#home" class="w3-bar-item w3-button w3-wide nav-brand">A.W.L.</a>
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#skills" class="w3-bar-item w3-button"><i class="fas fa-dumbbell"></i>SKILLS</a>
-      <a href="#linkedin" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i> LINKEDIN</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-github"></i> GITHUB</a>
-      <a href="#compendium" class="w3-bar-item w3-button"><i class="fa fa-flask"></i> COMPENDIUM</a>
-      <a href="#photography" class="w3-bar-item w3-button"><i class="fa fa-camera"></i> PHOTOGRAPHY</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      
+      <a href="#about"        class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#skills"       class="w3-bar-item w3-button">SKILLS</a>
+      <a href="#experience"   class="w3-bar-item w3-button">EXPERIENCE</a>
+      <a href="#publications" class="w3-bar-item w3-button">PUBLICATIONS</a>
+      <a href="#education"    class="w3-bar-item w3-button">EDUCATION</a>
+      <a href="#photography"  class="w3-bar-item w3-button">PHOTOGRAPHY</a>
+      <a href="#contact"      class="w3-bar-item w3-button">CONTACT</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Mobile Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#works" onclick="w3_close()" class="w3-bar-item w3-button">WORKS</a>
-  <a href="#compendium" onclick="w3_close()" class="w3-bar-item w3-button">COMPENDIUM</a>
-  <a href="#photography" onclick="w3_close()" class="w3-bar-item w3-button">PHOTOGRAPHY</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#about"        onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#skills"       onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+  <a href="#experience"   onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
+  <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
+  <a href="#education"    onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
+  <a href="#photography"  onclick="w3_close()" class="w3-bar-item w3-button">PHOTOGRAPHY</a>
+  <a href="#contact"      onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-sand" style="padding:48px">
-      <span class="w3-jumbo w3-hide-small"> <strong> Alex Larsen</strong> </span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium"> <b>Alex Larsen</b> </span><br>
-    <span class="w3-large">Bioinformatics Scientist with a neuroscience background </span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">A quick overview</a></p>
-    <p><a href="Alex_Larsen_Resume_2023.docx.pdf" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Resume</a></p>
-    </div> 
-  <!--
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-   	-->
+<!-- Hero -->
+<header class="hero-section" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-name">Alexander Larsen</h1>
+    <p class="hero-tagline">Computational Biology &bull; Deep Learning &bull; Bioinformatics</p>
+    <p class="hero-sub">PhD Candidate &mdash; TUM / Helmholtz Munich &amp; Roche</p>
+    <div class="hero-buttons">
+      <a href="#about" class="btn-hero">About Me</a>
+      <a href="Alex_Larsen_Resume_2025.docx.pdf" class="btn-hero btn-hero-outline">Resume</a>
+    </div>
+    <div class="hero-links">
+      <a href="https://github.com/Zinthrow" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/a-w-larsen/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://orcid.org/0009-0003-9175-6005" target="_blank" title="ORCID" class="hero-orcid">
+        <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID" width="22" height="22" style="vertical-align:middle;filter:brightness(0) invert(1);opacity:0.75;transition:opacity 0.2s;">
+      </a>
+      <a href="mailto:alarsen525@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+    </div>
   </div>
 </header>
 
-<!-- About Section -->
-<div class="skills-padding" id="about" style="font-size:120%;">
-  <h3 class="w3-center">About</h3>
-  <p class="w3-center w3-large">Summary</p>
-  <p class="w3-center">
-    Scientist and automation engineer for Multi-Omic
-    data and as it relates to clinical applications.
-    Excels in both fast-paced environments with
-    urgent clinical results and methodical high
-    dimensional data analysis. Automates multilanguage bioinformatic software and tool
-    development with an emphasis on python. Works
-    with business partners and other researchers
-    coordinating projects and public speaking. A selfdirected learner, highly collaborative, and
-    excellent at working autonomously.
-  </p>
-</div>
+<!-- About -->
+<section id="about" class="section-light">
+  <div class="section-inner">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I work at the intersection of <strong>deep learning, bioinformatics, and molecular design</strong>
+          for pharmaceutical development. My current focus is on building computational approaches for
+          siRNA, ASOs, and sequence-based therapeutics — combining predictive modeling, multimodal
+          biological data analysis, foundation model integration, and agentic workflows to support
+          drug discovery and design.
+        </p>
+        <p>
+          My background spans NGS, CRISPR-Cas, clinical and research data analysis, and bioinformatic
+          software development, from fast-paced diagnostic settings to high-dimensional biological modeling.
+          Over time my work has grown from classical bioinformatics pipelines into PyTorch-based ML systems
+          for therapeutic design, including feature engineering, workflow automation, and decision-support tooling.
+        </p>
+        <p>
+          I enjoy working across technical and scientific boundaries to build systems that are rigorous,
+          practical, and useful to real research teams, and I bring experience in cross-functional
+          collaboration, scientific communication, grant writing, and software development.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">99%+</span>
+          <span class="stat-label">Genomic Feature Reduction</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years in Bioinformatics</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">PhD</span>
+          <span class="stat-label">Computational Biology, TUM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- Skills Section -->
-<div id="skills" class="w3-container bgimg-2 skills-padding">
-  <div class="w3-row-padding w3-white w3-opacity-min" style="font-size:120%;font-weight:bolder;">
-    <!--div class="w3-col m1"><h3></h3></div>-->
-    <div class="w3-third m6"><h3>My Skills</h3></div>
-    <div class="w3-third m6"><h3></h3></div>
-    <div class="w3-container m6"><h3></h3></div>
-    <!--<div class="w3-col m1"><p></p></div>-->
-    <div class="w3-third m6 ">
-      <ul> 
-          <li> Software</li>
-          <ul>
-              <li>Python</li>
-              <li>SQL </li>
-              <li>MongoDB</li>
-              <li>C++</li>
-              <li>R Programming </li>
-              <li>Bash  </li>
-              <li>Git</li>
-              <li>Html/CSS </li>
-              <li>REST API</li>
-              <li>Javascript</li>
-              <li>Docker</li>   
-              </ul>        
-          </li>
+<!-- Skills -->
+<section id="skills" class="section-dark">
+  <div class="section-inner">
+    <h2 class="section-title section-title-light">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <h3><i class="fa fa-brain"></i> Machine Learning &amp; Deep Learning</h3>
+        <div class="skill-tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">Neural Networks</span>
+          <span class="tag">Transformers</span>
+          <span class="tag">LSTMs</span>
+          <span class="tag">VAEs</span>
+          <span class="tag">ConvNN / ResNet</span>
+          <span class="tag">DNA/RNA LLMs</span>
+          <span class="tag">Gradient Saliency</span>
+          <span class="tag">Random Forests</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">SVM / KNN</span>
+          <span class="tag">Ensemble Methods</span>
+          <span class="tag">PCoA / PCA</span>
+          <span class="tag">DESeq2</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fa fa-code"></i> Software Engineering</h3>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Perl</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Bash</span>
+          <span class="tag">C++</span>
+          <span class="tag">R</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Nextflow</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Git</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Django</span>
+          <span class="tag">SLURM / HPC</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fa fa-dna"></i> Bioinformatics</h3>
+        <div class="skill-tags">
+          <span class="tag">Metagenomics</span>
+          <span class="tag">NGS / Illumina NextSeq</span>
+          <span class="tag">Whole Exome Sequencing</span>
+          <span class="tag">CRISPR-Cas</span>
+          <span class="tag">siRNA / ASO Design</span>
+          <span class="tag">Sequence Alignment</span>
+          <span class="tag">RNA Structure (Vienna/Nupack)</span>
+          <span class="tag">GATK / Samtools</span>
+          <span class="tag">Bowtie2 / BWA</span>
+          <span class="tag">Kraken2 / CLARK</span>
+          <span class="tag">BLAST</span>
+          <span class="tag">Annovar / ClinVar</span>
+          <span class="tag">Hidden Markov Models</span>
+          <span class="tag">MSA / UPGMA</span>
+          <span class="tag">DeBruijn Graphs</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fa fa-flask"></i> Laboratory &amp; Communication</h3>
+        <div class="skill-tags">
+          <span class="tag">DNA/RNA/Protein Extraction</span>
+          <span class="tag">Western Blotting</span>
+          <span class="tag">PCR</span>
+          <span class="tag">Mass Spectrometry</span>
+          <span class="tag">Neuronal Electrophysiology</span>
+          <span class="tag">Grant Writing</span>
+          <span class="tag">SOP Writing</span>
+          <span class="tag">Public Speaking</span>
+          <span class="tag">Team Management</span>
+          <span class="tag">Mentoring</span>
+        </div>
+      </div>
+
     </div>
-    <div class="w3-third m6">
-      
-      <ul> 
-          <li> Bioinformatics</li>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="section-light">
+  <div class="section-inner">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Computational Biologist Doktorand</h3>
+              <p class="timeline-org">Roche &mdash; Basel, Switzerland / Penzberg, Germany</p>
+            </div>
+            <span class="timeline-date">Sep 2025 &ndash; Present</span>
+          </div>
           <ul>
-              <li>Metagenomics</li>
-              <li>Sequence alignment </li>
-              <li>Multiple Sequence alignment </li>
-              <li>Metatranscriptomics</li>
-              <li>Transcriptomics</li>
-              <li>Illumina Instrument Handling</li>
-              <li>Whole Exome Sequencing</li>
-              <li>Statistical modelling</li>
-              <li>Phylogeny</li>
-              </ul>        
-          </li>
-    </div>
-    <div class="w3-third m6">
-      
-      <ul> 
-          <li> Interpersonal</li>
-          <ul>
-              <li> Public Speaking </li>
-              <li> Mentoring </li>
-              <li> Project coordination</li>
-              <li> Involved Teamwork </li>
-              <li> Inter-divisional coordination</li>     
+            <li>Hybrid role between Penzberg, Basel, and Helmholtz for molecular design with Basel's RNA Hub and the Computational Science department under gRED.</li>
+            <li>Building generative and predictive models for siRNA/ASO therapeutic design, including chemically modified oligonucleotides.</li>
+            <li>Developed scalable, reproducible pipelines for training, inference, and benchmarking across deep learning, foundation model / LLM, and generative modeling projects.</li>
           </ul>
-          <li> Intrapersonal
-            <ul>
-                <li> Self-directed</li>
-                <li> SOP writing  </li>
-                <li> Project design </li>
-                <li> Goal Setting</li>
-            </ul>
-    </div>
-    <!--
-    <div class="w3-quarter m6">
-      <h3 style="font-size:120%">  </h3>
-      <ul style="font-size:120%">
-        <li> Hobbies and Interests
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Machine Learning Researcher &mdash; Doktorand</h3>
+              <p class="timeline-org">Helmholtz Munich &mdash; Munich, Germany</p>
+            </div>
+            <span class="timeline-date">Jun 2024 &ndash; Aug 2025</span>
+          </div>
           <ul>
-            <li> Hiking/camping </li>
-            <li> Rock Climbing </li>
-            <li> Traveling </li>
-            <li> Reading </li>
-            <li> Alpine skiing</li>
-            <li> Water skiing </li>
-            <li> Biking </li>
-            <li> Bike mechanics </li>
-            <li> Karate </li>
-            <li>Fencing</li>
+            <li>Generative modeling for RNA therapeutics: predicting siRNA efficacy with engineered features, chemically modified sequences, and foundation model embeddings.</li>
+            <li>Deep learning architectures: ResNet, AttentionPooling, LSTMs, VAEs with integrated gradient saliency maps for model explainability.</li>
+            <li>Curated the largest known publicly available dataset of chemically modified siRNAs for mRNA knockdown.</li>
+            <li>Benchmarking XGBoost, RF, Lasso/Ridge models; patent PaddleOCR data extraction; genetic algorithms and beam search for siRNA generative design.</li>
           </ul>
-        -->
-        </li>
-      </ul> 
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Bioinformatics Scientist I &rarr; Manager</h3>
+              <p class="timeline-org">Sherlock Biosciences &mdash; Boston, MA</p>
+            </div>
+            <span class="timeline-date">Nov 2020 &ndash; Jan 2024</span>
+          </div>
+          <ul>
+            <li>Led the Bioinformatics Division; managed employee reviews, project tracking, and cross-team coordination with experimental and theoretical groups.</li>
+            <li>Developed and maintained full company bioinformatics pipelines (Python, Perl, SQL, Bash, Docker, Vienna) optimizing RNA structure, CRISPR performance, LAMP constraints, and SDA across four amplification/readout chemistries.</li>
+            <li>Achieved 99%+ reduction in genomic feature space across all amplification technologies, dramatically reducing clinical diagnostic failure post-deployment.</li>
+            <li>Identified novel thermostable CRISPR-Cas proteins for publication and patent.</li>
+            <li>Supported grant applications for MIT/Harvard BROAD, B&amp;M Gates Foundation, and US Department of Defence FDA-cleared diagnostics contracts.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Clinical Bioinformatician I &amp; II</h3>
+              <p class="timeline-org">Aperiomics Inc. &mdash; Sterling, VA</p>
+            </div>
+            <span class="timeline-date">Jun 2018 &ndash; Nov 2020</span>
+          </div>
+          <ul>
+            <li>Designed automated COVID-19 report end-to-end software covering analysis, formatting, and clinical sign-off.</li>
+            <li>Built a metagenomic analysis library that automatically queries patient data for report statistics formatting (Python, Bash, SQL, CSS/HTML, Git, Django, Docker, AWS CLI).</li>
+            <li>Designed automated multi-process Human Microbiome Project WGS metagenomic pipeline on cluster.</li>
+            <li>Presented bioinformatics clinical value to investors, poster talks, and local events.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Associate Research Assistant</h3>
+              <p class="timeline-org">University of Wisconsin Madison &mdash; Madison, WI</p>
+            </div>
+            <span class="timeline-date">Apr 2013 &ndash; May 2016</span>
+          </div>
+          <ul>
+            <li>Characterized circadian rhythm genes and their temporal effect on long-term memory formation in <em>Drosophila</em> (Prof. Jerry Yin / Robin Fropf).</li>
+            <li>Additional research: zebrafish embryonic development, crayfish nerve reading frequencies, and rat hippocampal electrical activity (Prof. Tony Stretton).</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
+</section>
 
-<!-- Linkedin -->
-<div class="w3-container skills-padding" id="linkedin">
-  <h3 class="w3-center">LINKEDIN</h3>
-    <div class="w3-center">
-    <a class="w3-center" href="https://www.linkedin.com/in/a-w-larsen/">
-        <img src="linkedin.png" style="width:60%" onclick="onClick(this)" class="w3-hover-opacity w3-round-large w3-center" alt="Alex Larsen Profile">
-    </a>
-    <div class="w3-display-topleft w3-container"><p>Click image to go to linkedin profile</p></div>
+<!-- Publications -->
+<section id="publications" class="section-mid">
+  <div class="section-inner">
+    <h2 class="section-title">Publications</h2>
+    <div class="pub-orcid-bar">
+      <a href="https://orcid.org/0009-0003-9175-6005" target="_blank" class="orcid-link">
+        <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" width="16" height="16">
+        ORCID: 0009-0003-9175-6005
+      </a>
     </div>
-    <br>
-    <br>
- </div>
- 
-<!-- Github Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Github collection of works </h3>
-      <p> Brings you to my github, additional projects at request.</p>
-      <p><a href="https://github.com/Zinthrow" class="w3-button w3-black w3-xlarge"><i class="fa fa-github"> </i> View Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://codecondo.com/wp-content/uploads/2014/04/5-Coding-Challenges-to-Help-You-Train-Your-Brain.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-    
-<!-- COMPENDIUM Section -->
-<div class="w3-container w3-dark-grey" style="padding:128px 16px" id="compendium">
-  <h3 class="w3-center">COMPENDIUM</h3>
-  <p class="w3-center w3-large"> Helpful guide of bioinformatic tools. Contains software and some algorithms for sequence alignment, assembly, clustering, bayesian networks, biological networks and more from my classwork.  </p>
-  <p style="text-align:center;"><a href="Bioinformatics%20compendium.pdf" class="w3-button w3-black w3-xlarge"><i class="fa fa-file"> </i> View PDF </a></p>
-</div>
 
+    <div class="pub-list">
 
-<!-- Photography Section -->
-<div class="w3-container" style="padding:128px 16px" id="photography">
-  <h3 class="w3-center">PHOTOGRAPHY</h3>
-  <p class="w3-center w3-large">Highlights of my long trip over one year spanning 48 states and parts of Canada and Mexico.</p>
+      <div class="pub-card pub-inprogress">
+        <span class="pub-badge">In Preparation</span>
+        <p class="pub-citation">
+          Larsen, A., Butnaru, D., Rotrattanadumrong, R., Yonchev, D., Gagneur, J., &amp; Marsico, A. (2026).
+          <strong>FENNEC: Fine-Tuned Ensemble Neural Networks Accelerate Chemically Modified siRNA Design and Screening.</strong>
+          <em>Manuscript in preparation</em>, Institute of Computational Biology, Helmholtz Zentrum München; Roche Innovation Center Basel; TUM School of Computation, Information and Technology.
+        </p>
+      </div>
 
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-center" >
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BVK4n-ggT7e/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.14814814814815% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BVK4n-ggT7e/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-10T19:02:43+00:00">Jun 10, 2017 at 12:02pm PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-    
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BVVw4zFhxaA/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.333333333333332% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BVVw4zFhxaA/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-15T00:26:45+00:00">Jun 14, 2017 at 5:26pm PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-    
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BVK7CFOAUgr/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BVK7CFOAUgr/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-10T19:23:46+00:00">Jun 10, 2017 at 12:23pm PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>  
-    
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BUfe8kogUmF/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:33.84259259259259% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BUfe8kogUmF/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-05-24T22:31:00+00:00">May 24, 2017 at 3:31pm PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-    
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BNTNUMJDtet/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BNTNUMJDtet/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-27T04:26:17+00:00">Nov 26, 2016 at 8:26pm PST</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-      
-    
-    </div>    
-    <div class="w3-third w3-center" >
-        
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BUCmmSeAPgW/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BUCmmSeAPgW/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-05-13T17:19:53+00:00">May 13, 2017 at 10:19am PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-      
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BTrDUhdhqvN/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.14814814814815% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BTrDUhdhqvN/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-05-04T13:49:06+00:00">May 4, 2017 at 6:49am PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-        
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BLWPczzjJvH/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BLWPczzjJvH/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-10-09T15:39:53+00:00">Oct 9, 2016 at 8:39am PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-    
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BRjEsx-hhvX/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BRjEsx-hhvX/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-03-12T18:24:26+00:00">Mar 12, 2017 at 11:24am PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-        
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BUfePP_A8s7/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.14814814814815% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BUfePP_A8s7/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-05-24T22:24:49+00:00">May 24, 2017 at 3:24pm PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script> 
-     </div>    
-    <div class="w3-third w3-center" >
-        
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BMpMDMNDtSV/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.14814814814815% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BMpMDMNDtSV/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-10T20:47:08+00:00">Nov 10, 2016 at 12:47pm PST</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-      
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BMkc60jDj_r/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.14814814814815% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BMkc60jDj_r/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-09T00:38:20+00:00">Nov 8, 2016 at 4:38pm PST</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-      
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BMkcYTRDwW0/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:32.63888888888889% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BMkcYTRDwW0/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-09T00:33:37+00:00">Nov 8, 2016 at 4:33pm PST</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-      
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BLr23p7D9TP/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.888888888888886% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BLr23p7D9TP/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-10-18T01:08:23+00:00">Oct 17, 2016 at 6:08pm PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-      
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BKYTTiwB9yb/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:28.14814814814815% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BKYTTiwB9yb/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-09-15T14:20:39+00:00">Sep 15, 2016 at 7:20am PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-    
-    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BjJWkQInxgy/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:41.06481481481482% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BjJWkQInxgy/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alexander Larsen (@alexlars)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-05-24T04:05:24+00:00">May 23, 2018 at 9:05pm PDT</time></p></div></blockquote>
-    <script async defer src="//www.instagram.com/embed.js"></script>
-    
-      
-    </div> 
-    <!--<div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-    </div>  -->
-  </div>
-</div>
+      <div class="pub-card">
+        <span class="pub-badge pub-badge-published">Published</span>
+        <p class="pub-citation">
+          Phillips, E.; Silverman, A.; Joneja, A.; Liu, M.; Brown, C.; Carlson, P.; Coticchia, C.; Shytle, K.; Larsen, A.; Goyal, N.; et al. (2023).
+          <strong>Detection of viral RNAs at ambient temperature via reporter proteins produced through the target-splinted ligation of DNA probes.</strong>
+          <em>Nature Biomedical Engineering</em>.
+          <a href="https://doi.org/10.1038/s41551-023-01028-y" target="_blank" class="pub-doi">
+            <i class="fa fa-external-link-alt"></i> doi:10.1038/s41551-023-01028-y
+          </a>
+        </p>
+      </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
+      <div class="pub-card">
+        <span class="pub-badge pub-badge-published">Published</span>
+        <p class="pub-citation">
+          Pena JM, Manning BJ, Li X, Fiore ES, Carlson L, Shytle K, Nguyen PP, Azmi I, Larsen A, Wilson MK, Singh S, DeMeo MC, Ramesh P, Boisvert H, Blake WJ. (2023).
+          <strong>Real-Time, Multiplexed SHERLOCK for in Vitro Diagnostics.</strong>
+          <em>Journal of Molecular Diagnostics</em>, 25(7):428–437.
+          <a href="https://doi.org/10.1016/j.jmoldx.2023.03.009" target="_blank" class="pub-doi">
+            <i class="fa fa-external-link-alt"></i> doi:10.1016/j.jmoldx.2023.03.009
+          </a>
+        </p>
+      </div>
 
+      <div class="pub-card">
+        <span class="pub-badge pub-badge-published">Published</span>
+        <p class="pub-citation">
+          Larsen, A. W., Chen, Y., Crandall, K. A., Icenhour, C. R., &amp; Valencia, A. C. (2022).
+          <strong>Characterization of the Interstitial Cystitis/Bladder Pain Syndrome Microbiome in Clinically Diagnosed Patients.</strong>
+          <em>Clinical Immunology &amp; Research</em>.
+          <a href="https://doi.org/10.33425/2639-8494.1047" target="_blank" class="pub-doi">
+            <i class="fa fa-external-link-alt"></i> doi:10.33425/2639-8494.1047
+          </a>
+        </p>
+      </div>
 
+      <div class="pub-card">
+        <span class="pub-badge pub-badge-published">Published</span>
+        <p class="pub-citation">
+          Baugher, D., Larsen, A. W., Chen, Y., Icenhour, C. R., &amp; Valencia, C. A. (2021).
+          <strong>Female Urinary Microbiome Analysis and Artificial Intelligence Enhances the Infectious Diagnostic Yield in Precision Medicine.</strong>
+          <em>Microbiology &amp; Infectious Diseases</em>.
+          <a href="https://doi.org/10.33425/2639-9458.1126" target="_blank" class="pub-doi">
+            <i class="fa fa-external-link-alt"></i> doi:10.33425/2639-9458.1126
+          </a>
+        </p>
+      </div>
 
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Let's get in touch.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-center">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> US, Virgina</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> <a href="tel: 1-920-246-8971"> Phone: (920) 246-8971</a></p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> <a href="mailto: alarsen525@gmail.com"> Email: alarsen525@gmail.com</a></p>
-      <br>
-      </form>
-    </div>
-    <div class="w3-half">
-      <!-- Add Google Maps 
-      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>-->
+      <div class="pub-card">
+        <span class="pub-badge pub-badge-published">Published</span>
+        <p class="pub-citation">
+          Valencia, C. A., Baugher, D., Larsen, A., Chen, A., &amp; Icenhour, C. (2020).
+          <strong>Female Urinary Metagenomic Analysis and Natural Language Processing Enhances the Infectious Diagnostic Yield in Precision Medicine.</strong>
+          <em>Open Forum Infectious Diseases</em>.
+          <a href="https://doi.org/10.1093/ofid/ofaa439.1859" target="_blank" class="pub-doi">
+            <i class="fa fa-external-link-alt"></i> doi:10.1093/ofid/ofaa439.1859
+          </a>
+        </p>
+      </div>
+
     </div>
   </div>
-</div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section-light">
+  <div class="section-inner">
+    <h2 class="section-title">Education &amp; Certifications</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+        <div class="edu-detail">
+          <h3>Computational Biology PhD</h3>
+          <p class="edu-org">Technical University of Munich / Helmholtz Munich</p>
+          <p class="edu-date">Jun 2024 &ndash; Jan 2028 (expected) &mdash; Munich, DE</p>
+          <p class="edu-desc">Generative Modeling for RNA Therapeutics. Traditional Models vs Deep-Learning Foundation Models.</p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+        <div class="edu-detail">
+          <h3>M.S. Bioinformatics</h3>
+          <p class="edu-org">University of Maryland Global Campus</p>
+          <p class="edu-date">Mar 2019 &ndash; Nov 2021 &mdash; Adelphi, MD</p>
+          <p class="edu-desc">Alignment, Statistical Analysis, SQL Databases, Protein Structure, Biotechnology and Biomanufacturing.</p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+        <div class="edu-detail">
+          <h3>B.S. Neurobiology</h3>
+          <p class="edu-org">University of Wisconsin&ndash;Madison</p>
+          <p class="edu-date">Sep 2012 &ndash; May 2016 &mdash; Madison, WI</p>
+          <p class="edu-desc">Selective honors biology program (UW Madison Biocore) facilitating group-directed research, scientific writing, and analysis.</p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fa fa-certificate"></i></div>
+        <div class="edu-detail">
+          <h3>edX / MIT / UC Berkeley Certificates</h3>
+          <p class="edu-org">MIT &bull; UC Berkeley &bull; University of Maryland</p>
+          <p class="edu-date">May 2018 &ndash; Present</p>
+          <ul class="cert-list">
+            <li>Bioinformatics MicroMasters Certificate</li>
+            <li>BIF001x: DNA Sequences &bull; BIF002x: Proteins &bull; BIF003x: Statistical Analysis</li>
+            <li>Foundations of Data Science: Computational Thinking with Python</li>
+            <li>MITx 6.431x: Probability and Uncertainty</li>
+            <li>MITx 18.6501x: Fundamentals of Statistics</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GitHub -->
+<section id="github" class="section-dark">
+  <div class="section-inner">
+    <div class="github-row">
+      <div>
+        <h2 class="section-title section-title-light">GitHub</h2>
+        <p style="color:#ccc; max-width:480px;">Open-source projects, bioinformatics tools, machine learning experiments, and more. Additional projects available on request.</p>
+        <a href="https://github.com/Zinthrow" target="_blank" class="btn-github">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photography -->
+<section id="photography" class="section-light">
+  <div class="section-inner">
+    <h2 class="section-title">Photography</h2>
+    <p class="section-sub">Highlights from a year-long road trip spanning 48 states, parts of Canada and Mexico.</p>
+
+    <div class="w3-row-padding" style="margin-top:40px">
+      <div class="w3-third w3-center">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BVK4n-ggT7e/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:28% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BVK4n-ggT7e/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <script async defer src="//www.instagram.com/embed.js"></script>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BVVw4zFhxaA/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:28% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BVVw4zFhxaA/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BVK7CFOAUgr/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:62% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BVK7CFOAUgr/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BUfe8kogUmF/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:34% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BUfe8kogUmF/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BNTNUMJDtet/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:62% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BNTNUMJDtet/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+      </div>
+
+      <div class="w3-third w3-center">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BUCmmSeAPgW/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:50% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BUCmmSeAPgW/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BTrDUhdhqvN/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:28% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BTrDUhdhqvN/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BLWPczzjJvH/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:50% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BLWPczzjJvH/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BRjEsx-hhvX/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:50% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BRjEsx-hhvX/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BUfePP_A8s7/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:28% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BUfePP_A8s7/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+      </div>
+
+      <div class="w3-third w3-center">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BMpMDMNDtSV/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:28% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BMpMDMNDtSV/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BMkc60jDj_r/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:28% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BMkc60jDj_r/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BMkcYTRDwW0/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:33% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BMkcYTRDwW0/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BLr23p7D9TP/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:29% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BLr23p7D9TP/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BjJWkQInxgy/" data-instgrm-version="8" style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:4px auto;max-width:540px;padding:0;width:99%"><div style="padding:8px"><div style="background:#F8F8F8;line-height:0;margin-top:40px;padding:41% 0;text-align:center;width:100%"></div><p style="color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;margin:8px 0 0;overflow:hidden;text-align:center;text-overflow:ellipsis;white-space:nowrap"><a href="https://www.instagram.com/p/BjJWkQInxgy/" style="color:#c9c8cd;font-style:normal;font-weight:normal;text-decoration:none" target="_blank">A post shared by Alexander Larsen (@alexlars)</a></p></div></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section-dark">
+  <div class="section-inner">
+    <h2 class="section-title section-title-light">Contact</h2>
+    <p class="section-sub" style="color:#ccc;">Let's get in touch.</p>
+    <div class="contact-grid">
+      <a href="mailto:alarsen525@gmail.com" class="contact-item">
+        <i class="fa fa-envelope"></i>
+        <span>alarsen525@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/a-w-larsen/" target="_blank" class="contact-item">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>linkedin.com/in/a-w-larsen</span>
+      </a>
+      <a href="https://github.com/Zinthrow" target="_blank" class="contact-item">
+        <i class="fa-brands fa-github"></i>
+        <span>github.com/Zinthrow</span>
+      </a>
+      <a href="https://orcid.org/0009-0003-9175-6005" target="_blank" class="contact-item">
+        <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID" width="18" height="18" style="flex-shrink:0;filter:brightness(0) invert(1);opacity:0.7;">
+        <span>ORCID: 0009-0003-9175-6005</span>
+      </a>
+      <div class="contact-item contact-item-text">
+        <i class="fa fa-map-marker-alt"></i>
+        <span>Basel, Switzerland / Munich, Germany</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+<footer class="site-footer">
+  <a href="#home" class="footer-top"><i class="fa fa-arrow-up"></i> Back to Top</a>
+  <p class="footer-copy">&copy; 2025 Alexander Larsen</p>
 </footer>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('myNavbar');
+  if (window.scrollY > 80) {
+    navbar.classList.add('navbar-scrolled');
+  } else {
+    navbar.classList.remove('navbar-scrolled');
+  }
+});
+</script>
 
 </body>
 </html>
